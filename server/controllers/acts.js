@@ -45,6 +45,7 @@ module.exports = {
       new_act.avg_rating = 0;
       new_act.save(function(errors, act) {
         if(errors) {
+            console.log("saving")
           res.send(errors)
         } else {
           res.json(act)
